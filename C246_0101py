@@ -1,0 +1,7 @@
+#C052:ゲームの画面
+h, w = map(int, input().split())
+dx, dy = map(int, input().split())
+dx = abs(dx)
+dy = abs(dy)
+answer = h*dy + w*dx - (dx*dy)
+print(answer)
