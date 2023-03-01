@@ -25,8 +25,8 @@ def is_prime(num):
         return True
     elif num % 2 == 0:
         return False
-    
-    sqrtNum = math.floor(math.sqrt(num))
+    #Math.floor() 関数は与えられた数値以下の最大の整数を返します
+    sqrtNum = math.floor(math.sqrt(num))#Math.sqrt() 関数は、ある数の平方根を返します
     for i in range(3, sqrtNum + 1, 2):
         if num % i == 0:
             return False
